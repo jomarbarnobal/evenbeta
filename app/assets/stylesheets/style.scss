@@ -1,0 +1,40 @@
+ body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  .page-footer.bg{
+  	margin-top: 0px;
+ 		background: #263238;
+ 		.sub-bg {
+ 			background: #141D22;
+ 		}
+  }
+
+  .circle.image-profile {
+  	width:150px;
+  	height: 150px;
+  	position:relative;
+  	z-index: 1;  	
+  }
+
+  .row.profile {
+  	margin-top:-70px;
+  }
+
+  #social-icon > a{
+  	margin-right: 15px;
+  	margin-top: -20px;
+  }
+
+  .center .top {
+  	margin-top: -30px;
+		margin-bottom: 35px;
+  }
+
+ 

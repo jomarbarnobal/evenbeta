@@ -1,0 +1,11 @@
+<%= render 'shared/navigation' %>
+<main>
+<div class="container">
+	<%= time_ago_in_words(@event.created_at) %> Ago
+	<%= @event.content %>
+	<p><%= image_tag @event	.image.url(:large) %> </p>
+	<%= @event.title %>
+	<%= @event.location %>
+</div>
+</main>
+<%= render 'shared/footer' %>

@@ -1,0 +1,80 @@
+<div class="container">
+		<h1>create event</h1>
+
+	<%= form_for @event, html: { multipart: true } do |f|%>
+		<div class="input-field col s6 m12 l12">
+  	  <i class="material-icons prefix">mode_edit</i>
+      <%= f.text_field :title, id: 'icon_prefix'%>
+      <label for="icon_prefix2">Event Title</label>
+    </div>
+
+		<div class="input-field col s6 m12 l12">
+      <i class="material-icons prefix">comment</i>
+      <%= f.text_area :content, id: 'icon_prefix2', class: 'materialize-textarea'%>
+      <label for="icon_prefix2">Event Description</label>
+    </div>
+		
+		
+		<blockquote>
+		<p class="flow-text"><b>Schedule</b> habitant morbi tristique senectus senectus et netus et malesuada fames ac 	turpis egestas. Vestibulum</p>
+		</blockquote>
+			
+    <div class="row">
+    	<div class="input-field col s6 m12 l6">
+      <i class="material-icons prefix">comment</i>
+      <%= f.date_field :date, class: 'datepicker' %>
+      <!-- <input type="date" class="datepicker"> -->
+      <label for="icon_prefix2">Event start at</label>
+    </div>
+
+    <div class="input-field col s6 m12 l6">
+      <i class="material-icons prefix">schedule</i>
+      <input type="text">
+      <label for="icon_prefix2">Time starts at</label>
+    </div>
+    </div>
+
+    <div class="row">
+    	<div class="input-field col s6 m12 l6">
+      <i class="material-icons prefix">comment</i>
+      <%= f.date_field :date, class: 'datepicker' %>
+      <label for="icon_prefix2">Event ends at</label>
+    </div>
+
+    <div class="input-field col s6 m12 l6">
+      <i class="material-icons prefix">schedule</i>
+      <input type="text">
+      <label for="icon_prefix2">Time ends at</label>
+    </div>
+    </div>
+
+    <blockquote>
+		<p class="flow-text"><b>Location</b> habitant morbi tristique senectus senectus et netus et malesuada fames ac 	turpis egestas. Vestibulum</p>
+		</blockquote>
+
+		<div class="input-field col s6 m12 l12">
+      <i class="material-icons prefix">comment</i>
+      <%= f.text_area :location, id: 'icon_prefix2', class: 'materialize-textarea'%>
+      <label for="icon_prefix2">Event Location</label>
+    </div>
+    
+    <blockquote>
+		<p class="flow-text"><b>Event banner</b> habitant morbi tristique senectus senectus et netus et malesuada fames ac 	turpis egestas. Vestibulum</p>
+		</blockquote>
+		<div class="file-field input-field">
+      <div class="btn">
+        <span><i class="material-icons large">photo</i></span>
+        <!-- <input type="file" multiple> -->
+        <%= f.file_field :image %>
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text" placeholder="Uplod your event banner">
+      </div>
+    </div>
+
+		<div class="center input-field col s6 m12 l12">
+      <%= button_tag(type: 'submit', class: 'btn waves-effect waves-light') do %> Publish
+		  <% end %>
+    </div>
+	<% end %>	
+	</div>
