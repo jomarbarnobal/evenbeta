@@ -14,17 +14,21 @@
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require materialize-sprockets
+//= require window
 //= require turbolinks
 //= require_tree .
 
 
 $(document).ready(function(){
 
-	 $('.parallax').parallax();
+	$('.parallax').parallax();
 
+	$(".button-collapse").sideNav();
+
+  $('select').material_select();      
+  
 	$('.datepicker').pickadate({
     selectMonths: true, // Creates a dropdown to control month
     selectYears: 15 // Creates a dropdown of 15 years to control year
   });
-
 });

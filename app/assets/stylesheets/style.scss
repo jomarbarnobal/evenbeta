@@ -1,40 +1,94 @@
- body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
 
-  main {
-    flex: 1 0 auto;
-  }
+main {
+  flex: 1 0 auto;
+}
 
-  .page-footer.bg{
-  	margin-top: 0px;
- 		background: #263238;
- 		.sub-bg {
- 			background: #141D22;
- 		}
-  }
+.page-footer.bg{
+	margin-top: 0px;
+	padding-top: 0px;
+		background: #689f38;
+		.sub-bg {
+			//background: #141D22;
+		}
+}
 
-  .circle.image-profile {
-  	width:150px;
-  	height: 150px;
-  	position:relative;
-  	z-index: 1;  	
-  }
+.circle.image-profile {
+	width:150px;
+	height: 150px;
+	position:relative;
+	z-index: 1;  	
+}
 
-  .row.profile {
-  	margin-top:-70px;
-  }
+.row.profile {
+	margin-top:-70px;
+}
 
-  #social-icon > a{
-  	margin-right: 15px;
-  	margin-top: -20px;
-  }
+#social-icon > a{
+	margin-right: 15px;
+	margin-top: -20px;
+}
 
-  .center .top {
-  	margin-top: -30px;
-		margin-bottom: 35px;
-  }
+.center .top {
+	margin-top: -30px;
+	margin-bottom: 35px;
+}
 
- 
+.container.sessions {
+  width: 30em;
+  margin: 10% auto ;
+  @media screen and(max-width: 500px){
+  	width:90%;
+
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.btn-home.center {
+  margin-bottom:-30px;
+}
+
+#main-logo {
+  width:50px;
+  height:auto;
+  margin-top:5px;
+}
+
+.container.quote {
+	width: 50%;
+}
+
+ul.side-nav li.logo {
+text-align: center;
+margin-top: 32px;
+margin-bottom: 16px;
+border-bottom: 1px solid #ddd;
+}
+
+ul.side-nav li.logo:hover{
+	background-color: transparent;
+}
+
+.side-nav li:hover {
+	background-color: #c5e1a5; 
+}
+
+.side-nav li.active,
+.side-nav li a.active{
+	background-color: #689f38;
+	color: #fff !important;	
+}
+
+
+
+
