@@ -16,7 +16,7 @@
       <ul class="right hide-on-med-and-down">
         <% if user_signed_in? %>
         <li><%= link_to 'Events', events_path, class: 'grey-text text-darken-1' %></li>
-        <li><a class="grey-text text-darken-1 dropdown-button" href="#!" data-activates="dropdown1"><%= current_user.email %><i class="material-icons right">arrow_drop_down</i></a>
+        <li><a class="grey-text text-darken-1 dropdown-button" href="#!" data-activates="dropdown1"><%= current_user.email %><i class="fa fa-cog sm-icon right "></i></a>
         </li>
         <% else %>
         <li><%= link_to 'Events', events_path, class: 'grey-text text-darken-1' %></li>
