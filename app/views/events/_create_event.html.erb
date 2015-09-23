@@ -9,13 +9,13 @@
     
 	<%= form_for @event, html: { multipart: true } do |f|%>
 		<div class="input-field col s6 m12 l12">
-  	  <i class="material-icons prefix">mode_edit</i>
+  	  <i class="event fa fa-pencil-square-o prefix"></i>
       <%= f.text_field :title, id: 'icon_prefix'%>
       <label for="icon_prefix2">Event Title</label>
     </div>
 
 		<div class="input-field col s6 m12 l12">
-      <i class="material-icons prefix">comment</i>
+      <i class="event fa fa-file-text prefix"></i>
       <%= f.text_area :content, id: 'icon_prefix2', class: 'materialize-textarea'%>
       <label for="icon_prefix2">Event Description</label>
     </div>
@@ -27,14 +27,14 @@
 			
     <div class="row">
     	<div class="input-field col s6 m12 l6">
-      <i class="material-icons prefix">comment</i>
+      <i class="event fa fa-calendar prefix"></i>
       <%= f.date_field :starts, class: 'datepicker' %>
       <!-- <input type="date" class="datepicker"> -->
       <label for="icon_prefix2">Event start at</label>
     </div>
 
     <div class="input-field col s6 m12 l6">
-      <i class="material-icons prefix">schedule</i>
+      <i class="event fa fa-clock-o prefix"></i>
       <input type="text">
       <label for="icon_prefix2">Time starts at</label>
     </div>
@@ -42,13 +42,13 @@
 
     <div class="row">
     	<div class="input-field col s6 m12 l6">
-      <i class="material-icons prefix">comment</i>
+      <i class="event fa fa-calendar prefix"></i>
       <%= f.date_field :ends, class: 'datepicker' %>
       <label for="icon_prefix2">Event ends at</label>
     </div>
 
     <div class="input-field col s6 m12 l6">
-      <i class="material-icons prefix">schedule</i>
+      <i class="event fa fa-clock-o prefix"></i>
       <input type="text">
       <label for="icon_prefix2">Time ends at</label>
     </div>
@@ -59,7 +59,7 @@
     </blockquote>
 
 		<div class="input-field col s6 m12 l12">
-      <i class="material-icons prefix">room</i>
+      <i class="event fa fa-location-arrow prefix"></i>
       <%= f.text_area :location, id: 'icon_prefix2', class: 'materialize-textarea'%>
       <label for="icon_prefix2">Event Location</label>
     </div>
@@ -70,7 +70,7 @@
 
 		<div class="file-field input-field">
       <div class="btn">
-        <span><i class="material-icons large">photo</i></span>
+        <span><i class="event-photo fa fa-file-image-o large"></i></span>
         <!-- <input type="file" multiple> -->
         <%= f.file_field :image %>
       </div>
