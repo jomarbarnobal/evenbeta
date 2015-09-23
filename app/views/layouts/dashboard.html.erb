@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MyAppV1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+<ul id="dropdown1" class="dropdown-content db">
+  <li><%= link_to 'My profile', profiles_profile_path%></li>
+  <li><a href="#!">Account setting</a></li>
+  <li class="divider"></li>
+  <li><a href="#!">Profile setting</a></li>
+  <li><%= link_to 'Logout', destroy_user_session_path, method: 'delete'%></li>
+</ul>
+
+<div class="navbar-fixed">
+	<nav class="blue-grey darken-3">
+  	<div class="nav-wrapper">
+  		<div id="db-logo">
+  			<%= link_to root_path, class: 'brand-logo hide-on-small-and-down' do %>
+      <i class="fa fa-foursquare teal-text"></i>
+    	<% end %>	
+  		</div>
+			<a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a> 
+
+	    <ul id="nav-mobile" class="right padding-right hide-on-med-and-down">
+      	<li><a href="badges.html"><i class="fa fa-lg fa-bell-o"></i></a></li>
+      	<li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="fa fa-lg fa-ellipsis-v"></i></a></li>
+	    </ul>
+    </div>
+  </nav>
+</div>
+
+<main id="main">
+	<aside>
+		<ul id="slide-out" class="side-nav left-nav fixed">
+		<li><%= active_link_to 'Dashboard', dashboards_index_path,:active => :exact, class: 'light blue-grey-text' %></li>
+		<li><%= active_link_to 'Create new event', new_event_path, :active => :exact, class: 'light blue-grey-text'%></li>
+		<li><a class="light blue-grey-text" href="#!">Calendar</a></li>	
+    <li><a class="light blue-grey-text" href="#!">Message</a></li>
+    <li><a class="light blue-grey-text" href="#!">Followers</a></li>
+	</ul>	
+	</aside>
+	<sectin class="container">
+		<%= yield %>
+	</sectin>
+</main>
+</body>
+</html>

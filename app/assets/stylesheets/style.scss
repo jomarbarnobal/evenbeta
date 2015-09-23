@@ -131,5 +131,44 @@ span.event-date {
 	color:#fff;
 }
 
+#main {
+	padding-left: 240px;
+}
+
+ul.side-nav.left-nav {
+	top:64px;
+	 @media screen and(max-width: 600px){
+  top:56px;
+
+  }
+}
+
+.fa.fa-lg {
+	font-size: 1.2em;
+}
+
+.right.padding-right {
+	margin-right:25px
+}
+
+#db-logo {
+	margin-left:25px;
+}
+
+.dropdown-content.db {
+	min-width: 190px;
+}
+
+.container.dashboard-page {
+	padding:10px;
+}
+
+.divider.event-divider {
+	margin-bottom: 50px;
+}
+
+.side-nav li {
+	padding: 0 !important;
+}
 
 

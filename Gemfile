@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+gem 'active_link_to'
 # paper clip
 gem "paperclip", "~> 4.3"
 # Devise rails 

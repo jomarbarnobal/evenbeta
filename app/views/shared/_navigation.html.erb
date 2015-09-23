@@ -1,6 +1,6 @@
 <!-- Dropdown Structure -->
 <ul id="dropdown1" class="dropdown-content">
-  <li><a href="#!">Dashboard</a></li>
+  <li><%= link_to 'Dashboard', dashboards_index_path %></li>
   <li><a href="#!">settings</a></li>
   <li class="divider"></li>
   <li><%= link_to 'Logout', destroy_user_session_path, method: 'delete'%></li>
@@ -16,7 +16,7 @@
       <ul class="right hide-on-med-and-down">
         <% if user_signed_in? %>
         <li><%= link_to 'Events', events_path, class: 'grey-text text-darken-1' %></li>
-        <li><a class="grey-text text-darken-1 dropdown-button" href="#!" data-activates="dropdown1"><%= current_user.email %><i class="fa fa-cog sm-icon right "></i></a>
+        <li><a class="grey-text text-darken-1 dropdown-button" href="#!" data-activates="dropdown1"><%= current_user.email %><i class="fa fa-ellipsis-v sm-icon right "></i></a>
         </li>
         <% else %>
         <li><%= link_to 'Events', events_path, class: 'grey-text text-darken-1' %></li>
