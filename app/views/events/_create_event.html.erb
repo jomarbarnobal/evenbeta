@@ -1,6 +1,12 @@
-<div class="container">
-		<h1>create event</h1>
+<div class="container event-new">
+		<h1 class="center">Create your event</h1>
+    <div class="divider"></div>
 
+    <h5 class="light center">Tell us about your event. Well get you started right away.</h5>
+    <blockquote>
+      <div class="btn-flat green darken-1 white-text">start here</div>  
+    </blockquote>
+    
 	<%= form_for @event, html: { multipart: true } do |f|%>
 		<div class="input-field col s6 m12 l12">
   	  <i class="material-icons prefix">mode_edit</i>
@@ -16,7 +22,7 @@
 		
 		
 		<blockquote>
-		<p class="flow-text"><b>Schedule</b> habitant morbi tristique senectus senectus et netus et malesuada fames ac 	turpis egestas. Vestibulum</p>
+    <div class="btn-flat green darken-1 white-text">Schedule your event</div>
 		</blockquote>
 			
     <div class="row">
@@ -49,18 +55,19 @@
     </div>
 
     <blockquote>
-		<p class="flow-text"><b>Location</b> habitant morbi tristique senectus senectus et netus et malesuada fames ac 	turpis egestas. Vestibulum</p>
-		</blockquote>
+      <div class="btn-flat green darken-1 white-text">location</div>
+    </blockquote>
 
 		<div class="input-field col s6 m12 l12">
-      <i class="material-icons prefix">comment</i>
+      <i class="material-icons prefix">room</i>
       <%= f.text_area :location, id: 'icon_prefix2', class: 'materialize-textarea'%>
       <label for="icon_prefix2">Event Location</label>
     </div>
     
     <blockquote>
-		<p class="flow-text"><b>Event banner</b> habitant morbi tristique senectus senectus et netus et malesuada fames ac 	turpis egestas. Vestibulum</p>
-		</blockquote>
+    <div class="btn-flat green darken-1 white-text">your event banner</div>
+    </blockquote>
+
 		<div class="file-field input-field">
       <div class="btn">
         <span><i class="material-icons large">photo</i></span>
@@ -73,7 +80,7 @@
     </div>
 
 		<div class="center input-field col s6 m12 l12">
-      <%= button_tag(type: 'submit', class: 'btn waves-effect waves-light') do %> Publish
+      <%= button_tag(type: 'submit', class: 'btn waves-effect waves-light btn-large btn-long') do %> Publish
 		  <% end %>
     </div>
 	<% end %>	

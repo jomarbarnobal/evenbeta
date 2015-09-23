@@ -89,6 +89,31 @@ ul.side-nav li.logo:hover{
 	color: #fff !important;	
 }
 
+.container.event-new {
+	margin-bottom: 125px;
+}
+
+.container.event-one {
+	padding-top:50px;
+}
+
+.card-content .divider-cs {
+
+	width: 40%;
+	border-bottom: 2px solid green;
+	display: block;
+	margin: 50px auto;
+	text-align: center;
+	border-top: 2px solid green;
+}
+
+.text-cap {
+	text-transform: capitalize;
+}
+
+p.event-content {
+	font-size: 1.1em;
+}
 
 
 
