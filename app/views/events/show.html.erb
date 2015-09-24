@@ -1,27 +1,27 @@
-<main class="grey lighten-4">
-<div class="container event-one">
-	<div class="btn-home center">
+<main class="grey lighten-4 cf">
+	<div class="container event-one">
+  <div class="btn-home center">
     <%= link_to root_path, class: 'center btn-floating btn-large waves-effect waves-light red' do%>
     <i class="fa fa-foursquare white-text"></i>
     <% end %>
   </div>
    <div class="row">
     <div class="col s8 offset-s2 grid-example">
-    	<div class="card">
+      <div class="card">
         <div class="card-image">
           <%= image_tag @event.image.url(:large), class: 'responsive-img' %>
         </div>
         <div class="card-content">
-        	<div class="divider-cs">
-        		<h5 class="light"><%= @event.starts.try(:strftime, '%B %d, %Y') %></h5>
+          <div class="divider-cs">
+            <h5 class="light"><%= @event.starts.try(:strftime, '%B %d, %Y') %></h5>
           <p class="light grey-text text-darken-3"><%= @event.starts.try(:strftime, '%A') %></p>
           <p class="light grey-text text-darken-3">from 7:PM to 11:PM</p>
-        	</div>
+          </div>
         </div>
         <div class="card-action">
 
-        	<p class="center"><span class="light grey-text">Posted by </span> <%= link_to 'Event admin', profiles_profile_path, class: 'light blue-text'%>
-        	</p>
+          <p class="center"><span class="light grey-text">Posted by </span> <%= link_to 'Event admin', profiles_profile_path, class: 'light blue-text'%>
+          </p>
           <p class="center grey-text light text-cap"><%= time_ago_in_words(@event.created_at) %> Ago </p>
         </div>
       </div>
@@ -37,15 +37,15 @@
             </div>
 
             <div class="card-action">
-            	<div class="center">
-            		<a class="btn-flat disabled grey-text text-darken-1">SHARE</a>	
-            	</div>
-            	
-            	<div class="center">
-            		<a href="#"><i class="blue-text fa fa-facebook"></i></a>
-              	<a href="#"><i class="blue-text fa fa-twitter"></i></a>	
-              	<a href="#"><i class="blue-text fa fa-google-plus"></i></a>	
-            	</div>
+              <div class="center">
+                <a class="btn-flat disabled grey-text text-darken-1">SHARE</a>  
+              </div>
+              
+              <div class="center">
+                <a href="#"><i class="blue-text fa fa-facebook"></i></a>
+                <a href="#"><i class="blue-text fa fa-twitter"></i></a> 
+                <a href="#"><i class="blue-text fa fa-google-plus"></i></a> 
+              </div>
             </div>
           </div>
         </div>
@@ -56,7 +56,7 @@
           <div class="card white darken-1">
             <div class="card-content grey-text text-darken-1">
               <span class="card-title black-text text-darken-1">See you at <br />
-              	<span class="grey-text"><%= @event.location %></span></span>
+                <span class="grey-text"><%= @event.location %></span></span>
               <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet </p>
 
             </div>
@@ -67,7 +67,8 @@
           </div>
         </div>
       </div>
-	</div>
+  </div>
+
 </main>
 
-<%= render 'shared/footer'%>
+<% render 'shared/footer'%>

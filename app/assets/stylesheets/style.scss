@@ -171,4 +171,47 @@ ul.side-nav.left-nav {
 	padding: 0 !important;
 }
 
+/* background setup */
+.not-fullscreen.background{
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  overflow: hidden;
+}
+
+html, body {
+    /* give this to all tags from html to .fullscreen */
+    height:100%;
+}
+
+.fullscreen,
+.content-a {
+    width:100%;
+    min-height:100%;
+}
+
+.not-fullscreen,
+.not-fullscreen .content-a,
+.fullscreen.not-overflow,
+.fullscreen.not-overflow .content-a {
+    height:100%;
+    overflow:hidden;
+}
+
+#padding-top {
+	padding-top:50px;
+}
+
+a.pointer-disable {
+	cursor: default;
+}
+
+a.btn-flat:hover {
+	color: green;
+}
+
+
 
