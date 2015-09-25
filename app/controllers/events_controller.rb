@@ -1,5 +1,5 @@
 class EventsController < ApplicationController
-	before_action :authenticate_user!
+	before_filter :authenticate_user!, except: [:show]
 	layout 'dashboard', only: [:new, :edit, :delete]	
 	def index
 		@events = Event.all.order('created_at DESC')

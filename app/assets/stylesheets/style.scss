@@ -56,7 +56,11 @@ input:-webkit-autofill:active {
 
 .btn-home.center {
   margin-bottom:-30px;
-}
+    @media screen and(max-width: 500px){
+  	margin-top:50px;
+
+  }
+ }
 
 #main-logo {
   width:50px;
@@ -171,36 +175,23 @@ ul.side-nav.left-nav {
 	padding: 0 !important;
 }
 
-/* background setup */
-.not-fullscreen.background{
-	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
-  overflow: hidden;
+#bgs {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
 }
-
-html, body {
-    /* give this to all tags from html to .fullscreen */
-    height:100%;
+#bgs img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
 }
-
-.fullscreen,
-.content-a {
-    width:100%;
-    min-height:100%;
-}
-
-.not-fullscreen,
-.not-fullscreen .content-a,
-.fullscreen.not-overflow,
-.fullscreen.not-overflow .content-a {
-    height:100%;
-    overflow:hidden;
-}
-
 #padding-top {
 	padding-top:50px;
 }
